@@ -3,44 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <title>Inclement Days</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
 
-  <nav>
-  <a href="/">Home</a>
+<body class="has-text-light">
+
+  
+
+<nav class="navbar is-dark" role="navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+    <img src="/images/logo.svg" alt="Inclement Days Logo" class="logo"/>
+          
+    <span class="ml-2 has-text-weight-semibold">Inclement Days</span></a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/">Home</a>
+      
+      <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">Cities</a>
+      <div class="navbar-dropdown">
+      <a class="navbar-item" href="/dublin/">
+        Dublin
+      </a>
+      <a class="navbar-item" href="/paris/">
+        Paris
+      </a>
+      <a class="navbar-item" href="/cork/">
+        Cork
+      </a>
+      <a class="navbar-item" href="/lisbon/">
+        Lisbon
+      </a>
+    </div>
+</div>
+      <a class="navbar-item" href="/summary/">Weekly Summary</a>
+  </div>
+
+  <div class="navbar-menu">
+  <div class="navbar-end">
+  <div class="navbar-item">
+  Inclement Days | Providing weather forecasts for selected cities
+  </div>
+  </div>
+  </div>
 </nav>
 
 
-  <main>
-    
-<h1 class="title is-3">Inclement Days</h1>
-<p>Welcome to the project.</p>
 
 
+  <section class="section">
+    <div class="container">
+      
 
+<div class="home-cards">
+<div class="columns is-multiline">
+<div class="column is-one-quarter">
+<a href="/dublin/" class="card-link">
 
-<div class="card weather-card">
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="card weather-card">
   <div class="card-content has-text-centered">
-    <div class="weather-icon"></div>
+    <div class="weather-icon">🌧️</div>
 
-    <p class="title is-4">Today</p>
-    <p class="subtitle is-6"></p>
+    <p class="title is-4">Morning</p>
+    <p class="subtitle is-6">Dublin</p>
 
-    <p class="temp">12°C</p>
+    <p class="temp">10°C</p>
 
-    <p class="desc"></p>
+    <p class="desc">Showers</p>
 
     <p class="weather-extra">
-      High: °C · Low: °C · Wind:  km/h
+      High: 12°C · Low: 5°C · Wind: 22 km/h
     </p>
   </div>
 </div>
 
 
+  </a>
+</div>
 
 
-  </main>
+<div class="column is-one-quarter">
+<a href="/paris/" class="card-link">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="card weather-card">
+  <div class="card-content has-text-centered">
+    <div class="weather-icon">🌤️</div>
+
+    <p class="title is-4">Today</p>
+    <p class="subtitle is-6">Paris</p>
+
+    <p class="temp">12°C</p>
+
+    <p class="desc">Bright</p>
+
+    <p class="weather-extra">
+      High: 15°C · Low: 7°C · Wind: 18 km/h
+    </p>
+  </div>
+</div>
+
+
+  </a>
+</div>
+
+<div class="column is-one-quarter">
+<a href="/cork/" class="card-link">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="card weather-card">
+  <div class="card-content has-text-centered">
+    <div class="weather-icon">🌧️</div>
+
+    <p class="title is-4">Morning</p>
+    <p class="subtitle is-6">Cork</p>
+
+    <p class="temp">6°C</p>
+
+    <p class="desc">Raining</p>
+
+    <p class="weather-extra">
+      High: 10°C · Low: 4°C · Wind: 30 km/h
+    </p>
+  </div>
+</div>
+
+
+  </a>
+</div>
+
+<div class="column is-one-quarter">
+<a href="/lisbon/" class="card-link">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="card weather-card">
+  <div class="card-content has-text-centered">
+    <div class="weather-icon">☀️</div>
+
+    <p class="title is-4">Today</p>
+    <p class="subtitle is-6">Lisbon</p>
+
+    <p class="temp">13°C</p>
+
+    <p class="desc">Sunny</p>
+
+    <p class="weather-extra">
+      High: 16°C · Low: 11°C · Wind: 10 km/h
+    </p>
+  </div>
+</div>
+
+
+  </a>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+  </section>
+
+  
+
+<footer class="inclement-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Inclement Days | Weather Forecast</h3>
+          <p>
+            Weather at your fingertips
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: <a href="mailto:info@inclement.ie">info@inclement.ie</a></p>
+          <p>Phone: +353 (0)1 123 4567</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Inclement Days. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
 </body>
 </html>

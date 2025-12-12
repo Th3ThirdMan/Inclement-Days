@@ -1,12 +1,75 @@
 ---
 layout: layout.njk
-title: Weekly Summary
+eleventyNavigation:
+  key: Summary
+title: Inclement Days
 ---
 
-<h2 class="title is-3">Weekly Summary</h2>
+{# Summary card overview for each city #}
+<h2 class="title is-3 has-text-centered mb-4">
+  Weekly Summary
+</h2>
 
-{# Early Version #}
+<div class="columns is-multiline">
 
-{% set day = "Weekly Avg" %}
-{% set temp = "9" %}
-{% include "card.njk" %}
+  {# Dublin #}
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">🌧️</div>
+        <p class="title is-5">Dublin | Weekly Summary</p>
+        <p class="temp">9°c Avg</p>
+        <p class="weather-extra">
+          High: 12°C · Low: 5°C<br>
+          5 wet days · Showers with brighter spells later
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {# Paris #}
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">🌤️</div>
+        <p class="title is-5">Paris | Weekly Summary</p>
+        <p class="temp">9°c Avg</p>
+        <p class="weather-extra">
+          High: 15°C · Low: 2°C<br>
+          Mainly dry with some scattered showers
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {# Cork #}
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">🌧️</div>
+        <p class="title is-5">Cork | Weekly Summary</p>
+        <p class="temp">8°c Avg</p>
+        <p class="weather-extra">
+          High: 11°C · Low: 2°C<br>
+          6 wet days · Wet and windy all week
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {# Lisbon #}
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">☀️</div>
+        <p class="title is-5">Lisbon | Weekly Summary</p>
+        <p class="temp">14°c Avg</p>
+        <p class="weather-extra">
+          High: 18°C · Low: 9°C<br>
+          Dry with sunny spells
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>

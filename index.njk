@@ -1,13 +1,77 @@
 ---
 layout: layout.njk
+eleventyNavigation:
+  key: Home
 title: Inclement Days
 ---
+{#  
+  Simplified version of cities - wrapped in .home-cards, 
+  hiding extra details 
+#}
 
-<h1 class="title is-3">Inclement Days</h1>
-<p>Welcome to the project.</p>
+<div class="home-cards">
+<div class="columns is-multiline">
+<div class="column is-one-quarter">
+<a href="/dublin/" class="card-link">
+{% set day = "Morning" %}
+  {% set city = "Dublin" %}
+  {% set temp = "10" %}
+  {% set time = "11.00" %}
+  {% set description = "Showers" %}
+  {% set wind = "22" %}
+  {% set high = "12" %}
+  {% set low = "5" %}
+  {% set icon = "🌧️" %}
+  {% include "card.njk" %}
+  </a>
+</div>
 
-{# Testing card component #}
-{% set day = "Today" %}
-{% set temp = "12" %}
-{% include "card.njk" %}
+{# Cards Link - opens 7-day Forecast page #}
+<div class="column is-one-quarter">
+<a href="/paris/" class="card-link">
+  {% set day = "Today" %}
+  {% set city = "Paris" %}
+  {% set temp = "12" %}
+  {% set time = "12.00" %}
+  {% set description = "Bright" %}
+  {% set wind = "18" %}
+  {% set high = "15" %}
+  {% set low = "7" %}
+  {% set icon = "🌤️" %}
+  {% include "card.njk" %}
+  </a>
+</div>
+
+<div class="column is-one-quarter">
+<a href="/cork/" class="card-link">
+  {% set day = "Morning" %}
+  {% set city = "Cork" %}
+  {% set temp = "6" %}
+  {% set time = "11.00" %}
+  {% set description = "Raining" %}
+  {% set wind = "30" %}
+  {% set high = "10" %}
+  {% set low = "4" %}
+  {% set icon = "🌧️" %}
+  {% include "card.njk" %}
+  </a>
+</div>
+
+<div class="column is-one-quarter">
+<a href="/lisbon/" class="card-link">
+  {% set day = "Today" %}
+  {% set city = "Lisbon" %}
+  {% set temp = "13" %}
+  {% set time = "12.00" %}
+  {% set description = "Sunny" %}
+  {% set wind = "10" %}
+  {% set high = "16" %}
+  {% set low = "11" %}
+  {% set icon = "☀️" %}
+  {% include "card.njk" %}
+  </a>
+</div>
+</div>
+</div>
+
 

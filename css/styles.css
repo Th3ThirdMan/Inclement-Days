@@ -1,0 +1,223 @@
+/* Global Dark Mode */
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* Links */
+a {
+  color: #7dd3fc;
+}
+
+a:hover {
+  color: #bae6fd;
+}
+
+/* Navbar */
+
+.navbar {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+}
+
+.navbar.is-dark {
+  background: #020617;
+  border-bottom: 1px solid #111827;
+}
+
+.navbar .navbar-item,
+.navbar .navbar-brand .navbar-item {
+  color: #e5e7eb;
+}
+
+.navbar .navbar-item:hover {
+  background: #111827;
+  color: #ffffff;
+}
+
+.navbar.is-dark .navbar-dropdown {
+  background-color: #2a2e35;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Dropdown links */
+.navbar.is-dark .navbar-dropdown .navbar-item {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* Dropdown Contrast Hover */
+.navbar.is-dark .navbar-dropdown .navbar-item:hover {
+  background-color: #3a3f46;
+  color: #ffffff;
+}
+
+/* Navbar Logo */
+.navbar-item img.logo {
+  height: 50px;
+  max-height: none;
+}
+
+
+/* Weather Card */
+
+.weather-card {
+  background: #0b1220;
+  border-radius: 14px;
+  padding: 1.4rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+
+  /* Card Contrast */
+  border: 1px solid #1f2937;
+  box-shadow:
+    0 12px 32px rgba(0,0,0,0.85),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.weather-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.15s ease;
+}
+
+
+/* Card text */
+.weather-card .title {
+  color: #f8fafc;
+}
+
+.weather-card .subtitle,
+.weather-extra,
+.desc {
+  color: #cbd5e1;
+}
+
+.weather-card p {
+  color: #e5e7eb;
+}
+
+/* Icon */
+
+.weather-icon {
+  font-size: 6.5rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+/* Temperature and Other Data */
+
+.temp {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.desc {
+  color: #9ca3af;
+  margin-top: -4px;
+}
+
+.weather-extra {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Make Home cards more compact */
+
+.home-cards .weather-extra {
+  display: none;         /* Removes extra detail on smaller cards */
+}
+
+/* 7-Day Forecast */
+
+/* Compact resizing of Weekly Forecast cards */
+
+.forecast-week .weather-card {
+  padding: 0.9rem;
+}
+
+.forecast-week .weather-icon {
+  font-size: 4rem;      /* Smaller icon */
+  margin-bottom: 0.3rem;
+}
+
+.forecast-week .title {
+  font-size: 1rem;      /* Day */
+  margin-bottom: 0.2rem;
+}
+
+.forecast-week .subtitle {
+  font-size: 0.9rem;    /* City */
+  margin-bottom: 0.3rem;
+}
+
+.forecast-week .temp {
+  font-size: 1.4rem;
+}
+
+.forecast-week .desc {
+  font-size: 0.85rem;
+}
+
+.forecast-week .weather-extra {
+  font-size: 0.75rem;
+}
+
+
+/* Footer */
+
+.inclement-footer {
+  background-color: #0b1220;
+  color: #e5e7eb;
+  border-top: 1px solid #111827;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.inclement-footer a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.inclement-footer a:hover {
+  color: #bae6fd;
+  text-decoration: underline;
+}
+
+/* Layout inside Footer */
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.footer-about h3,
+.footer-contact h4 {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.footer-about p,
+.footer-contact p {
+  margin: 0.1rem 0;
+}
+
+/* Bottom line */
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #111827;
+  padding-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}

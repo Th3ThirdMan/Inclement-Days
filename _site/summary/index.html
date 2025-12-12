@@ -2,44 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weekly Summary</title>
+  <title>Inclement Days</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
 
-  <nav>
-  <a href="/">Home</a>
+<body class="has-text-light">
+
+  
+
+<nav class="navbar is-dark" role="navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+    <img src="/images/logo.svg" alt="Inclement Days Logo" class="logo"/>
+          
+    <span class="ml-2 has-text-weight-semibold">Inclement Days</span></a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/">Home</a>
+      
+      <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">Cities</a>
+      <div class="navbar-dropdown">
+      <a class="navbar-item" href="/dublin/">
+        Dublin
+      </a>
+      <a class="navbar-item" href="/paris/">
+        Paris
+      </a>
+      <a class="navbar-item" href="/cork/">
+        Cork
+      </a>
+      <a class="navbar-item" href="/lisbon/">
+        Lisbon
+      </a>
+    </div>
+</div>
+      <a class="navbar-item" href="/summary/">Weekly Summary</a>
+  </div>
+
+  <div class="navbar-menu">
+  <div class="navbar-end">
+  <div class="navbar-item">
+  Inclement Days | Providing weather forecasts for selected cities
+  </div>
+  </div>
+  </div>
 </nav>
 
 
-  <main>
-    
-<h2 class="title is-3">Weekly Summary</h2>
 
 
+  <section class="section">
+    <div class="container">
+      
 
+<h2 class="title is-3 has-text-centered mb-4">
+  Weekly Summary
+</h2>
 
+<div class="columns is-multiline">
 
-<div class="card weather-card">
-  <div class="card-content has-text-centered">
-    <div class="weather-icon"></div>
-
-    <p class="title is-4">Weekly Avg</p>
-    <p class="subtitle is-6"></p>
-
-    <p class="temp">9°C</p>
-
-    <p class="desc"></p>
-
-    <p class="weather-extra">
-      High: °C · Low: °C · Wind:  km/h
-    </p>
+  
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">🌧️</div>
+        <p class="title is-5">Dublin | Weekly Summary</p>
+        <p class="temp">9°c Avg</p>
+        <p class="weather-extra">
+          High: 12°C · Low: 5°C<br>
+          5 wet days · Showers with brighter spells later
+        </p>
+      </div>
+    </div>
   </div>
+
+  
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">🌤️</div>
+        <p class="title is-5">Paris | Weekly Summary</p>
+        <p class="temp">9°c Avg</p>
+        <p class="weather-extra">
+          High: 15°C · Low: 2°C<br>
+          Mainly dry with some scattered showers
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">🌧️</div>
+        <p class="title is-5">Cork | Weekly Summary</p>
+        <p class="temp">8°c Avg</p>
+        <p class="weather-extra">
+          High: 11°C · Low: 2°C<br>
+          6 wet days · Wet and windy all week
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
+    <div class="card weather-card weekly-summary-card">
+      <div class="card-content has-text-centered">
+        <div class="weather-icon">☀️</div>
+        <p class="title is-5">Lisbon | Weekly Summary</p>
+        <p class="temp">14°c Avg</p>
+        <p class="weather-extra">
+          High: 18°C · Low: 9°C<br>
+          Dry with sunny spells
+        </p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
+    </div>
+  </section>
 
+  
 
-  </main>
+<footer class="inclement-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Inclement Days | Weather Forecast</h3>
+          <p>
+            Weather at your fingertips
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: <a href="mailto:info@inclement.ie">info@inclement.ie</a></p>
+          <p>Phone: +353 (0)1 123 4567</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Inclement Days. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
 </body>
 </html>

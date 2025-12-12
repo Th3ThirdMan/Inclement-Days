@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+
+<body class="has-text-light">
 
   {% include "nav.njk" %}
 
-  <main>
-    {{ content | safe }}
-  </main>
+  <section class="section">
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </section>
+
+  {% include "footer.njk" %}
 
 </body>
 </html>
