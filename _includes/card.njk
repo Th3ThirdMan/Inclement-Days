@@ -1,4 +1,17 @@
-<div class="card">
-  <p>{{ day }}</p>
-  <p>{{ temp }}°C</p>
+<div class="card weather-card">
+  <div class="card-content has-text-centered">
+    <div class="weather-icon">{{ icon }}</div>
+
+    <p class="title is-4">{{ day }}</p>
+    <p class="subtitle is-6">{{ city }}</p>
+
+    <p class="temp">{{ temp }}°C</p>
+
+    <p class="desc">{{ description }}</p>
+
+    <p class="weather-extra">
+      High: {{ high }}°C · Low: {{ low }}°C · Wind: {{ wind }} km/h
+    </p>
+  </div>
 </div>
+

@@ -5,7 +5,14 @@ title: Dublin Forecast
 
 <h2 class="title is-3">Dublin Forecast</h2>
 
-{# Basic version of a single day of weather #}
-{% set day = "Monday" %}
-{% set temp = "8" %}
+{% set day = "Today" %}
+{% set city = "Dublin" %}
+{% set temp = "10" %}
+{% set description = "Showers" %}
+{% set high = "12" %}
+{% set low = "5" %}
+{% set wind = "22" %}
+{% set icon = "🌧️" %}
+
 {% include "card.njk" %}
+
