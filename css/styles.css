@@ -222,8 +222,31 @@ a:hover {
   color: #9ca3af;
 }
 
+/* Disable mobile Bulma dropdown */
 @media (max-width: 1024px) {
-  .navbar-menu {
+
+  /* Remove the hover dropdown entirely */
+  .navbar-item.has-dropdown.is-hoverable:hover .navbar-dropdown {
     display: block !important;
+  }
+
+  /* Force dropdown to be always visible */
+  .navbar-item.has-dropdown .navbar-dropdown {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Disable hover/toggle behavior */
+  .navbar-item.has-dropdown .navbar-link {
+    pointer-events: none !important;
+    cursor: default !important;
+    background: none !important;
   }
 }
