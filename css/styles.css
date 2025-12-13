@@ -37,24 +37,6 @@ a:hover {
   color: #ffffff;
 }
 
-.navbar.is-dark .navbar-dropdown {
-  background-color: #2a2e35;
-  border: none;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-/* Dropdown links */
-.navbar.is-dark .navbar-dropdown .navbar-item {
-  color: #ffffff;
-  background-color: transparent;
-}
-
-/* Dropdown Contrast Hover */
-.navbar.is-dark .navbar-dropdown .navbar-item:hover {
-  background-color: #3a3f46;
-  color: #ffffff;
-}
-
 /* Navbar Logo */
 .navbar-item img.logo {
   height: 50px;
@@ -220,32 +202,4 @@ a:hover {
   padding-top: 0.75rem;
   font-size: 0.8rem;
   color: #9ca3af;
-}
-
-/* FINAL FIX — works on every page */
-@media (max-width: 1024px) {
-
-  /* Make dropdown always expanded on mobile */
-  nav.navbar .navbar-dropdown {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    position: relative !important;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Disable dropdown toggle behaviour */
-  nav.navbar .navbar-link {
-    pointer-events: none !important;
-    cursor: default !important;
-  }
-
-  /* Remove dropdown hover state override */
-  nav.navbar .navbar-item.has-dropdown.is-hoverable:hover .navbar-dropdown {
-    display: block !important;
-  }
 }
