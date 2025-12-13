@@ -221,3 +221,9 @@ a:hover {
   font-size: 0.8rem;
   color: #9ca3af;
 }
+
+@media (max-width: 1024px) {
+  .navbar-menu {
+    display: block !important;
+  }
+}
