@@ -204,7 +204,7 @@ a:hover {
   color: #9ca3af;
 }
 
-/* ====== SIMPLE RESPONSIVE TOP NAV ====== */
+/* Responsive Navigation */
 
 .inclement-nav {
   background: #020617;
@@ -247,7 +247,7 @@ a:hover {
 }
 
 
-/* ====== MOBILE STACKING ====== */
+/* Mobile Responsive */
 
 @media (max-width: 768px) {
   .inclement-nav {
