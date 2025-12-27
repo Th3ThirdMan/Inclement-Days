@@ -53,7 +53,7 @@ One challenge encountered during development was an issue with content not rende
 
 Another challenge involved navigation and routing for city-specific pages. Initially, some city pages did not render correctly due to missing or incorrectly structured index.njk files. This was resolved by ensuring each city page followed Eleventy’s expected folder and file structure, allowing navigation links to route correctly.
 
-A further challenge related to navigation styling. Due to project constraints, JavaScript could not be used, and Bulma’s default dropdown navigation relied on JavaScript and applied a white background that conflicted with the site’s dark theme. This was resolved by implementing a simplified, custom navigation layout using CSS only, ensuring consistent styling and responsiveness across devices.
+A further challenge related to navigation styling. Due to project constraints, JavaScript could not be used, and Bulma’s default dropdown navigation relied on JavaScript and applied a white background that conflicted with the site’s dark theme - while it served as a workaround I felt the contrast in the dropdown too stark, so needed to omit this. This was resolved by implementing a simplified, custom navigation layout using CSS only, ensuring consistent styling and responsiveness across devices.
 
 Finally, repeated weather information across multiple pages was managed by creating reusable Nunjucks components, allowing weather cards to be reused with different hardcoded data.
 
