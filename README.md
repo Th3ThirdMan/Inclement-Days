@@ -49,7 +49,7 @@ Project is deployed here: https://inclement-days.netlify.app/
 
 ## Challenges & Solutions
 
-One problem I encountered during development was an issue with content not rendering correctly in the Eleventy layout include file. It was the result of omitting the {{ content | safe }} placeholder from the file. This prevented page content from being injected into the layout. It was resolved by dropping in the placeholder in the layout template.
+One problem I encountered during development was an issue with content not rendering correctly in the Eleventy layout include file. It was the result of omitting the `{{ content | safe }}` placeholder from the file. This prevented page content from being injected into the layout. It was resolved by dropping in the placeholder in the layout template.
 
 There were other issues with navigation and city-specific pages. Initially, some city pages did not render correctly due to omitting the index.njk files. It was resolved by ensuring each city page followed Eleventy’s folder structure. This allowed the navigation links to route correctly.
 
