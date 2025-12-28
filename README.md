@@ -1,6 +1,6 @@
 ## Site Overview
 
-This project is a weather forecasting website implementing hardcoded static data for selected cities. It makes use of reuseable components to present detailed information on specific cities. The aim of the project was to build a multi-page weather forecasting website using Eleventy and Bulma. There is no server-side functionality, apart from a final deployment to Netlify.
+This project builds a weather forecasting webpage using hardcoded static data for selected cities. It uses reusable components to provide detailed information about cities. The project's objective was to build a multi-page weather forecasting website using Eleventy and Bulma. There is no server-side functionality aside from a final deployment to Netlify.
 
 ## Planning Stage
 ### Target Audience
@@ -49,11 +49,11 @@ Project is deployed here: https://inclement-days.netlify.app/
 
 ## Challenges & Solutions
 
-One challenge encountered during development was an issue with content not rendering correctly when using the Eleventy layout system. This occurred when the {{ content | safe }} placeholder was omitted from the main layout file, which prevented page content from being injected into the layout. This was resolved by correctly reinstating the placeholder in the layout template.
+One problem I encountered during development was an issue with content not rendering correctly in the Eleventy layout include file. It was the result of omitting the {{ content | safe }} placeholder from the file. This prevented page content from being injected into the layout. It was resolved by dropping in the placeholder in the layout template.
 
-Another challenge involved navigation and routing for city-specific pages. Initially, some city pages did not render correctly due to missing or incorrectly structured index.njk files. This was resolved by ensuring each city page followed Eleventy’s expected folder and file structure, allowing navigation links to route correctly.
+There were other issues with navigation and city-specific pages. Initially, some city pages did not render correctly due to omitting the index.njk files. It was resolved by ensuring each city page followed Eleventy’s folder structure. This allowed the navigation links to route correctly.
 
-A further challenge related to navigation styling. Due to project constraints, JavaScript could not be used, and Bulma’s default dropdown navigation relied on JavaScript and applied a white background that conflicted with the site’s dark theme - while it served as a workaround I felt the contrast in the dropdown too stark, so needed to omit this. This was resolved by implementing a simplified, custom navigation layout using CSS only, ensuring consistent styling and responsiveness across devices.
+There was another issue relating to navigation styling. Due to project constraints, JavaScript could not be used, and Bulma’s default dropdown navigation relied on JavaScript which applied a white background that conflicted with the site’s dark theme - while it served as a workaround I felt the contrast in the dropdown too stark, so needed to omit this. This was resolved by implementing a simplified, custom navigation layout using CSS only, ensuring consistent styling and responsiveness across devices.
 
 Finally, repeated weather information across multiple pages was managed by creating reusable Nunjucks components, allowing weather cards to be reused with different hardcoded data.
 
